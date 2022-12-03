@@ -1,1 +1,116 @@
 /** @format */
+:root {
+  --branding-color: #d789d7;
+  --secondary-color: #9d65c9;
+  --branding-background: linear-gradient(
+    to right,
+    rgb(173, 83, 137),
+    rgb(60, 16, 83)
+  );
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --primary-font-family: "Baloo 2", cursive;
+  --secondary-font-family: "Delius Unicase", cursive;
+}
+body {
+  background-color: rgb(0, 0, 0);
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+    url("../images/pancakes_cover.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 100px 0;
+  font-family: var(--primary-font-family);
+}
+header h1 {
+  font-size: 54px;
+  font-weight: 700;
+  font-family: var(--secondary-font-family);
+  line-height: 1.2;
+  margin: 30px 0;
+}
+head h2 {
+  font-weight: lighter;
+}
+header p {
+  font-size: 24px;
+  margin: 0;
+}
+
+header a {
+  font-size: 19px;
+  padding: 5px 23px;
+  margin: 30px auto 25px;
+  font-family: var(--primary-font-family);
+  border: none;
+  border-radius: 10px;
+  background-color: #f6a30995;
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(241, 245, 6);
+}
+
+header a:hover {
+  padding: 5px 23px;
+  margin: 30px auto 25px;
+  font-family: var(--primary-font-family);
+  border-radius: 10px;
+  font-weight: bold;
+}
+.container {
+  color: white;
+  text-align: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/*footer*/
+footer {
+  margin: 50px 20px;
+  color: white;
+}
+.footer {
+  margin: 10px;
+}
+.footer-email {
+  display: block;
+  text-align: center;
+  font-family: var(--primary-font-family);
+  font-size: 12px;
+}
+
+.footer-info {
+  text-align: center;
+  font-family: var(--primary-font-family);
+  font-size: 12px;
+}
+
+.git-link {
+  text-decoration: none;
+  color: rgb(115, 23, 165);
+  font-weight: bold;
+  font-family: var(--primary-font-family);
+}
+
+.git-link:hover {
+  transition: 200ms ease-in-out;
+  color: var(--secondary-color);
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 60px 0;
+  }
+  header h1 {
+    font-size: 48px;
+  }
+  header h2 {
+    font-size: 20px;
+  }
+
+  header p {
+    font-size: 15px;
+  }
+}

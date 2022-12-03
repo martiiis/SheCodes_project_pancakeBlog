@@ -11,17 +11,24 @@
   --primary-font-family: "Baloo 2", cursive;
   --secondary-font-family: "Delius Unicase", cursive;
 }
+
 body {
-  background-color: rgb(0, 0, 0);
+  font-family: var(--primary-font-family);
+  color: white;
+}
+.container {
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
 }
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
     url("../images/pancakes_cover.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   padding: 100px 0;
-  font-family: var(--primary-font-family);
 }
 header h1 {
   font-size: 54px;
@@ -58,50 +65,82 @@ header a:hover {
   border-radius: 10px;
   font-weight: bold;
 }
-.container {
-  color: white;
+/*container-info*/
+.container-info {
+  border: 1px solid black;
   text-align: center;
-  max-width: 1400px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 120px;
+}
+/*Container-about*/
+.container-about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/plate_pancakes.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid black;
+  padding: 30px 70px;
 }
 
-/*footer*/
-footer {
-  margin: 50px 20px;
+.container-about li {
+  list-style: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+.website {
   color: white;
+  padding: 10px;
 }
-.footer {
-  margin: 10px;
+/*footer*/
+.footer-section {
+  margin: 2px 0 45px;
+  border-top: 3px solid purple;
 }
-.footer-email {
+.bottombar {
+  color: rgb(253, 252, 252);
+  text-align: right;
+  padding: 10px 50px;
+  background-color: #090110;
+}
+.logo {
   display: block;
-  text-align: center;
-  font-family: var(--primary-font-family);
-  font-size: 12px;
+  text-align: left;
 }
-
-.footer-info {
-  text-align: center;
-  font-family: var(--primary-font-family);
-  font-size: 12px;
+.coded-by {
+  margin-top: -30px;
+  text-align: end;
+  margin-bottom: 12px;
+  line-height: 20px;
+  font-size: 15px;
+  color: rgb(249, 242, 242);
 }
-
-.git-link {
+.links {
   text-decoration: none;
-  color: rgb(115, 23, 165);
-  font-weight: bold;
-  font-family: var(--primary-font-family);
 }
-
-.git-link:hover {
-  transition: 200ms ease-in-out;
-  color: var(--secondary-color);
+.fa-brands,
+.fa-globe {
+  color: rgb(242, 225, 239);
+  font-size: 25px;
+  padding: 3px;
+}
+.fa-github-square:hover {
+  color: purple;
+}
+.fa-linkedin:hover{
+  color: blue;
+}
+.fa-globe:hover {
+  color: rgb(24, 104, 117);
 }
 
 @media (max-width: 900px) {
-  header {
-    padding: 60px 0;
+  header,
+  .container-about {
+    padding: 10px 15px;
   }
   header h1 {
     font-size: 48px;

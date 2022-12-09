@@ -10,6 +10,7 @@
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   --primary-font-family: "Baloo 2", cursive;
   --secondary-font-family: "Delius Unicase", cursive;
+  --border-radius: 10px
 }
 
 body {
@@ -28,6 +29,7 @@ header {
   background-position: center center;
   background-size: cover;
   padding: 100px 0;
+  border-radius: var(--border-radius);
 }
 header h1 {
   font-size: 54px;
@@ -108,25 +110,26 @@ header a:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 85%;
   border-radius: 10px;
 }
 /*Container-about*/
 .container-about {
   background-image: linear-gradient(
-      rgba(246, 240, 240, 0.39),
-      rgba(255, 249, 249, 0.9)
+    rgba(246, 240, 240, 0.39),
+    rgba(255, 249, 249, 0.9)
     ),
     url("../images/plate_pancakes.jpg");
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.container-about h3 {
-  line-height: 0.5;
-  font-size: 24px;
-}
-.container-about ul {
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: var(--border-radius);
+  }
+  .container-about h3 {
+    line-height: 0.5;
+    font-size: 24px;
+  }
+  .container-about ul {
   padding: 0;
 }
 .container-about li {
@@ -203,7 +206,7 @@ header a:hover {
   }
 
   header p {
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .grid {
@@ -224,6 +227,6 @@ header a:hover {
     font-size: 20px;
   }
   .img-responsive{
-    max-width: 100%;
+    max-width: 90%;
   }
 }

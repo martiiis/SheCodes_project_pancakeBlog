@@ -72,7 +72,10 @@ header a:hover {
 }
 /*Container-about*/
 .container-about {
-  background-image: linear-gradient(rgba(128, 128, 128, 0.6), rgba(189, 188, 188, 0.6)),
+  background-image: linear-gradient(
+      rgba(128, 128, 128, 0.6),
+      rgba(189, 188, 188, 0.6)
+    ),
     url("../images/plate_pancakes.jpg");
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -95,10 +98,11 @@ header a:hover {
   border-top: 3px solid purple;
 }
 .bottombar {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   color: rgb(25, 24, 24);
   text-align: right;
   padding: 10px 50px;
-  
 }
 .logo {
   display: block;
@@ -107,16 +111,20 @@ header a:hover {
   font-weight: bold;
 }
 .coded-by {
-  margin-top: -30px;
   text-align: end;
   margin-bottom: 12px;
   line-height: 20px;
   font-size: 16px;
   color: rgb(16, 12, 12);
 }
+.icon-links {
+  display: block;
+  text-align: right;
+  margin-top: 12px;
+}
 .links {
   text-decoration: none;
-  color:black;
+  color: black;
   font-weight: bold;
 }
 .fa-brands,
@@ -128,14 +136,14 @@ header a:hover {
 .fa-github-square:hover {
   color: purple;
 }
-.fa-linkedin:hover{
+.fa-linkedin:hover {
   color: blue;
 }
 .fa-globe:hover {
   color: rgb(24, 104, 117);
 }
 
-.links:hover{
+.links:hover {
   color: var(--secondary-color);
   font-weight: bold;
 }

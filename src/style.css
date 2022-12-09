@@ -16,12 +16,12 @@ body {
   font-family: var(--primary-font-family);
 }
 .container {
-  color: white;
-  text-align: center;
   margin: 0 auto;
   padding: 20px;
 }
 header {
+  color: white;
+  text-align: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
     url("../images/pancakes_cover.png");
   background-repeat: no-repeat;
@@ -64,40 +64,82 @@ header a:hover {
   border-radius: 10px;
   font-weight: bold;
 }
+.grid-2-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 30px ;
+  grid-gap: 20px;
+}
+.grid-3-col {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  padding: 30px;
+}
+
 /*container-info*/
 .container-info {
-  text-align: center;
-  margin: 0 auto;
-  padding: 120px;
+  background-color: aliceblue;
+}
+
+.container-info h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: gray;
+  opacity: 0.6;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+.container-info h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.container-info p {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.img-responsive {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  border-radius: 10px;
 }
 /*Container-about*/
 .container-about {
   background-image: linear-gradient(
-      rgba(128, 128, 128, 0.6),
-      rgba(189, 188, 188, 0.6)
+      rgba(246, 240, 240, 0.39),
+      rgba(255, 249, 249, 0.9)
     ),
     url("../images/plate_pancakes.jpg");
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 30px 70px;
 }
-
+.container-about h3 {
+  line-height: 0.5;
+  font-size: 24px;
+}
+.container-about ul {
+  padding: 0;
+}
 .container-about li {
   list-style: none;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
+  margin: 0;
+  padding: 0;
 }
 
 /*footer*/
-.footer-section {
+
+.bottombar {
   margin: 2px 0 45px;
   border-top: 3px solid purple;
-}
-.bottombar {
   display: grid;
   grid-template-columns: 1fr 2fr;
   color: rgb(25, 24, 24);
@@ -162,5 +204,23 @@ header a:hover {
 
   header p {
     font-size: 15px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+  .container-info h3 {
+    line-height: 1;
+    margin-top: 10px;
+  }
+  .container-about {
+    margin: 0;
+    padding: 30px;
+    text-align: justify;
+  }
+  .container-about h3 {
+    line-height: 0;
+    font-size: 20px;
   }
 }

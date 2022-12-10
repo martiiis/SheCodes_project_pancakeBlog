@@ -49,20 +49,21 @@ header p {
   margin: 0;
 }
 
- .action-btn {
+.action-btn {
   font-size: 19px;
   padding: 5px 23px;
   margin: 30px auto 25px;
   font-family: var(--primary-font-family);
   border: none;
   border-radius: 10px;
-  background-color: #ffffff4b;
+  background-color: #f5d1a84b;
   color: rgb(228, 148, 0);
   display: inline-block;
   text-decoration: none;
+   border: 1px solid rgba(230, 140, 51, 0.387);
 }
 
- .action-btn:hover {
+.action-btn:hover {
   padding: 5px 23px;
   margin: 30px auto 25px;
   font-family: var(--primary-font-family);
@@ -79,6 +80,7 @@ header p {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
   padding: 30px;
+  grid-gap: 30px;
 }
 
 .grid-3-same-col {
@@ -93,7 +95,7 @@ header p {
   grid-template-columns: 1fr 1fr;
 }
 
-.grid-2-col-recipe{
+.grid-2-col-recipe {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-gap: 65px;
@@ -138,7 +140,7 @@ header p {
 /*Secndary section*/
 
 .secondary {
-  background-color: rgba(202, 225, 245, 0.575);
+  background-color: #f2bf4944;
   padding-top: 15px;
   text-align: center;
   padding-bottom: 30px;
@@ -171,25 +173,28 @@ header p {
   padding: 0 50px 10px;
 }
 
-
 .embed {
   width: 100%;
   display: block;
   padding-bottom: 20px;
 }
 
+.third {
+  text-align: center;
+  margin-top: 30px;
+  background-color: aliceblue;
+}
 .grid-2-col-recipe li {
   list-style: decimal;
   text-align: justify;
   font-size: 18px;
   padding-bottom: 10px;
-  
 }
 
-.embed-video{
+.embed-video {
   width: 100%;
   display: block;
-  aspect-ratio:16/9;
+  aspect-ratio: 16/9;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
@@ -249,7 +254,7 @@ header p {
   text-align: right;
   margin-top: 12px;
 }
-.links {
+.links, .website{
   text-decoration: none;
   color: black;
   font-weight: bold;
@@ -275,9 +280,12 @@ header p {
   font-weight: bold;
 }
 
+.website:hover{
+  color: rgb(228, 148, 0);
+}
 @media (max-width: 1100px) {
   .grid-2-col,
-  .grid-3-col ,
+  .grid-3-col,
   .grid-2-col-recipe,
   .grid-3-same-col {
     grid-template-columns: 1fr;
